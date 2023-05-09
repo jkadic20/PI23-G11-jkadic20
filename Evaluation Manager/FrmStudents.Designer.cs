@@ -28,25 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvStudents1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents1)).BeginInit();
+            this.dgvStudents = new System.Windows.Forms.DataGridView();
+            this.btnEvaluateStudent = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvStudents1
+            // dgvStudents
             // 
-            this.dgvStudents1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStudents1.Location = new System.Drawing.Point(0, 0);
-            this.dgvStudents1.Name = "dgvStudents1";
-            this.dgvStudents1.Size = new System.Drawing.Size(558, 228);
-            this.dgvStudents1.TabIndex = 0;
+            this.dgvStudents.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudents.Location = new System.Drawing.Point(12, 12);
+            this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStudents.Size = new System.Drawing.Size(776, 390);
+            this.dgvStudents.TabIndex = 0;
+            // 
+            // btnEvaluateStudent
+            // 
+            this.btnEvaluateStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEvaluateStudent.Location = new System.Drawing.Point(603, 410);
+            this.btnEvaluateStudent.Name = "btnEvaluateStudent";
+            this.btnEvaluateStudent.Size = new System.Drawing.Size(91, 28);
+            this.btnEvaluateStudent.TabIndex = 1;
+            this.btnEvaluateStudent.Text = "Evaluiraj studenta";
+            this.btnEvaluateStudent.UseVisualStyleBackColor = true;
+            this.btnEvaluateStudent.Click += new System.EventHandler(this.btnEvaluateStudent_Click);
             // 
             // FrmStudents
             // 
-            this.ClientSize = new System.Drawing.Size(559, 278);
-            this.Controls.Add(this.dgvStudents1);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEvaluateStudent);
+            this.Controls.Add(this.dgvStudents);
             this.Name = "FrmStudents";
-            this.Load += new System.EventHandler(this.FrmStudents_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents1)).EndInit();
+            this.Text = "FrmStudents";
+            this.Load += new System.EventHandler(this.FrmStudents_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -54,7 +74,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvStudents;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dgvStudents1;
+        private System.Windows.Forms.Button btnEvaluateStudent;
     }
 }
