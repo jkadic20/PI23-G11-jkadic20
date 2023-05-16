@@ -44,13 +44,13 @@
             this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvStudents.Size = new System.Drawing.Size(776, 390);
             this.dgvStudents.TabIndex = 0;
+            this.dgvStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellContentClick);
             // 
             // btnEvaluateStudent
             // 
-            this.btnEvaluateStudent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEvaluateStudent.Location = new System.Drawing.Point(603, 410);
+            this.btnEvaluateStudent.Location = new System.Drawing.Point(680, 408);
             this.btnEvaluateStudent.Name = "btnEvaluateStudent";
-            this.btnEvaluateStudent.Size = new System.Drawing.Size(91, 28);
+            this.btnEvaluateStudent.Size = new System.Drawing.Size(108, 30);
             this.btnEvaluateStudent.TabIndex = 1;
             this.btnEvaluateStudent.Text = "Evaluiraj studenta";
             this.btnEvaluateStudent.UseVisualStyleBackColor = true;
