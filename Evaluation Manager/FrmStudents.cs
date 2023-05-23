@@ -48,5 +48,11 @@ namespace Evaluation_Manager
         private void dgvStudents_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
         }
+
+        private void btnGenerateEvaluationReport_Click(object sender, EventArgs e) {
+            var form = new FrmFinalReport();
+            form.ShowDialog();
+
+        }
     }
 }
